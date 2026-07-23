@@ -64,7 +64,7 @@
 .google-login-btn:hover { background-color: #357ae8; }
 </style>
 <div class="google-login-container">
-    <a href=" " class="google-login-btn">
+    <a href="https://example.com/plugin.php?id=googlelogin:googlelogin&action=login" class="google-login-btn">
         使用Google帳號登入
     </a>
 </div>
