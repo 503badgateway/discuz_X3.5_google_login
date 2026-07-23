@@ -52,6 +52,22 @@
 3. 填入 Google Client Secret
 4. 啟用插件
 5. 保存設置
+6. 在注意登入頁面手動放置：
+
+``` html
+<!--{if $_G['cache']['plugin']['googlelogin']['enabled']}-->
+<style type="text/css">
+.google-login-container { margin: 20px 0; text-align: center; border-top: 1px solid #e5e5e5; padding-top: 15px; }
+.google-login-btn { display: inline-block; padding: 12px 24px; background-color: #4285f4; color: #ffffff !important; text-decoration: none; border-radius: 4px; font-size: 14px; font-weight: 500; }
+.google-login-btn:hover { background-color: #357ae8; }
+</style>
+<div class="google-login-container">
+    <a href=" " class="google-login-btn">
+        使用Google帳號登入
+    </a>
+</div>
+<!--{/if}-->
+```
 
 ## 使用方法
 
