@@ -26,7 +26,7 @@
 
 ### 1. 上傳插件文件
 
-將整個 `googlelogin` 文件夾上傳到論壇的 `source/plugin/` 目錄下。
+下载zip後重命名文件，將整個 `googlelogin` 文件夾上傳到論壇的 `source/plugin/` 目錄下。
 
 ### 2. 安裝插件
 
@@ -54,7 +54,7 @@
 3. 填入 Google Client Secret
 4. 啟用插件
 5. 保存設置
-6. 在注意登入頁面手動放置：
+6. 在登入頁面手動放置：
 
 ``` html
 <!--{if $_G['cache']['plugin']['googlelogin']['enabled']}-->
