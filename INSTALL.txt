@@ -1,0 +1,67 @@
+====================================
+Discuz! X3.5 Google登入插件安裝指南
+====================================
+
+版本：1.0.0
+日期：2026-07-23
+
+一、上傳文件
+------------
+1. 將整個 googlelogin 文件夾上傳到：
+   論壇根目錄/source/plugin/googlelogin/
+
+2. 確認文件結構正確，應包含以下文件：
+   - discuz_plugin_googlelogin.xml
+   - install.php
+   - uninstall.php
+   - googlelogin.inc.php
+   - 其他PHP文件
+   - language/ 目錄
+   - table/ 目錄
+   - template/ 目錄
+
+二、安裝插件
+------------
+1. 登入Discuz!後台管理
+2. 進入：應用中心 → 插件
+3. 找到「Google登入插件」
+4. 點擊「安裝」按鈕
+5. 等待安裝完成
+
+三、配置Google OAuth
+--------------------
+1. 訪問 https://console.cloud.google.com/
+2. 創建新項目或選擇現有項目
+3. 啟用 Google+ API
+4. 創建OAuth 2.0憑證
+5. 設置重定向URI：
+   https://你的域名/plugin.php?id=googlelogin&action=callback
+6. 複製 Client ID 和 Client Secret
+
+四、配置插件
+------------
+1. 在Discuz!後台進入：應用 → 插件 → Google登入插件 → 設置
+2. 填入 Google Client ID
+3. 填入 Google Client Secret
+4. 啟用插件（選擇「是」）
+5. 選擇是否自動創建帳號
+6. 點擊「提交」保存設置
+
+五、測試功能
+------------
+1. 退出後台登入
+2. 訪問論壇登入頁面
+3. 應該可以看到「使用Google帳號登入」按鈕
+4. 點擊按鈕測試登入功能
+
+六、故障排除
+------------
+如果遇到問題：
+1. 檢查 PHP 版本是否 >= 7.4
+2. 確認 cURL 擴展已啟用
+3. 檢查 Google Console 重定向URI設置
+4. 查看論壇錯誤日誌
+
+七、技術支持
+------------
+如有問題，請參考 README.md 文件

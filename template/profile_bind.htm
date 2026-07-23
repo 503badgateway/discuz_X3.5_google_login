@@ -1,0 +1,18 @@
+<!--{if $_G['cache']['plugin']['googlelogin']['enabled']}-->
+<div class="google-bind-section">
+    <h3>{lang googlelogin_title}</h3>
+    <!--{eval $google_bind = C::t('#googlelogin#googlelogin_users')->fetch_by_uid($_G['uid']);}-->
+    <!--{if $google_bind}-->
+        <div class="google-bound-info">
+            <img src="{$google_bind['google_avatar']}" alt="Avatar" class="google-avatar">
+            <span>{$google_bind['google_name']} ({$google_bind['google_email']})</span>
+            <a href="plugin.php?id=googlelogin:googlelogin&action=unbind" class="btn-unbind">{lang googlelogin_unbind_google}</a>
+        </div>
+    <!--{else}-->
+        <div class="google-not-bound">
+            <p>{lang googlelogin_not_bound}</p>
+            <a href="plugin.php?id=googlelogin:googlelogin&action=bind" class="google-bind-btn">{lang googlelogin_bind_google}</a>
+        </div>
+    <!--{/if}-->
+</div>
+<!--{/if}-->
