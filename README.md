@@ -157,8 +157,8 @@ googlelogin/
 
 ## 授權協議
 
-MIT License
+CC0
 
 ## 技術支持
 
-如有問題或建議，請聯繫開發者。
+請開Issue
