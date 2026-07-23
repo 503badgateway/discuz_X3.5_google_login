@@ -1,5 +1,7 @@
 # Discuz! X3.5 Google登入插件
 
+**Demo: [https://mcbbs.space](https://www.mcbbs.space)**
+
 ## 插件介紹
 
 這是一個為Discuz! X3.5開發的Google登入插件，支持PHP 7.4，允許用戶使用Google帳號快速登入論壇。
